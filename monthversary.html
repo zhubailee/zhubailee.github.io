@@ -42,8 +42,8 @@
 
     .spark {
       position: absolute;
-      width: 5px;
-      height: 5px;
+      width: 500px;
+      height: 500px;
       background: #FF69B4;
       border-radius: 50%;
       animation: explode 1s ease-out forwards;
@@ -229,7 +229,7 @@
         if (currentSlide < slides.length) {
           slides[currentSlide].style.display = "block"; // Show current slide
           currentSlide++;
-          setTimeout(showNextSlide, 2000); // Delay before next slide
+          setTimeout(showNextSlide, 5000); // Delay before next slide
         } else {
           hideGIFInsideAndShowOutside();
         }

@@ -194,30 +194,6 @@
       }, 1000);
     }
 
-    // Fireworks logic
-    function startFireworks() {
-      fireworksElement.style.display = "block";
-      for (let i = 0; i < 50; i++) {
-        const spark = document.createElement("div");
-        spark.classList.add("spark");
-        spark.style.setProperty("--x", Math.random());
-        spark.style.setProperty("--y", Math.random());
-        spark.style.left = "50%";
-        spark.style.top = "50%";
-        fireworksElement.appendChild(spark);
-
-        setTimeout(() => {
-          spark.remove();
-        }, 1000);
-      }
-
-      setTimeout(() => {
-        fireworksElement.style.display = "none";
-        document.body.style.backgroundColor = "white"; // Reset background
-        startSlides();
-      }, 1000); // Fireworks duration
-    }
-
     // Slide show logic
     let currentSlide = 0;
 

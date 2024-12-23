@@ -208,7 +208,7 @@
 
         setTimeout(() => {
           spark.remove();
-        }, 1000);
+        }, 500);
       }
 
       setTimeout(() => {
@@ -229,7 +229,7 @@
         if (currentSlide < slides.length) {
           slides[currentSlide].style.display = "block"; // Show current slide
           currentSlide++;
-          setTimeout(showNextSlide, 2000); // Delay before next slide
+          setTimeout(showNextSlide, 5000); // Delay before next slide
         } else {
           hideGIFInsideAndShowOutside();
         }
